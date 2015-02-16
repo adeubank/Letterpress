@@ -4,6 +4,11 @@ module.exports = function () {
 
   var helper = this;
 
+  // SETUP
+  this.Given(/^I am a new visitor$/, function (callback) {
+    callback();
+  });
+
   this.Given(/^The setting with key "([^"]*)" and value "([^"]*)"/, function (key, value, callback) {
     // Throws an exception if Meteor.settings is not defined, or if requested setting is missing
     function _getPublicMeteorSettingForKey (key) {
@@ -20,20 +25,26 @@ module.exports = function () {
     }
   });
 
-  this.Given(/^I am a new visitor$/, function (callback) {
-    callback();
-  });
-
+  // EXECUTE
   this.When(/^I navigate to the landing page$/, function (callback) {
     helper.world.browser.
       url(helper.world.mirrorUrl).
       call(callback);
   });
 
+  // VERIFY
   this.Then(/^I see the heading "([^"]*)"$/, function (arg1, callback) {
     helper.world.browser.
       getText('h1', function (error, actualHeading) {
         assert.equal(actualHeading, Meteor.settings.public.book.title);
+        callback();
+      });
+  });
+
+  this.Then(/^I see the image from "([^"]*)"/, function (expectedImageSource, callback) {
+    helper.world.browser.
+      getAttribute('header figure img', function (err, actualImageSource) {
+        assert.equal(actualImageSource, expectedImageSource);
         callback();
       });
   });

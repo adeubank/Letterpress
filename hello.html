@@ -3,6 +3,7 @@
 </head>
 
 <body>
+  {{>header}}
   <h1>{{bookTitle}}</h1>
 
   {{> hello}}
@@ -11,4 +12,13 @@
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="header">
+    <header>
+        <figure>
+            <img src="{{imageSrc}}" alt="{{imageCaption}}">
+            <figcaption>{{imageCaption}}</figcaption>
+        </figure>
+    </header>
 </template>
