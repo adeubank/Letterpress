@@ -1,7 +1,6 @@
 alanning:package-stubber@0.0.9
 amplify@1.0.0
 application-configuration@1.0.4
-autopublish@1.0.2
 autoupdate@1.1.5
 base64@1.0.2
 binary-heap@1.0.2
@@ -21,7 +20,6 @@ html-tools@1.0.3
 htmljs@1.0.3
 http@1.0.10
 id-map@1.0.2
-insecure@1.0.2
 jquery@1.11.3
 json@1.0.2
 launch-screen@1.0.1
@@ -44,8 +42,8 @@ reactive-var@1.0.4
 reload@1.1.2
 retry@1.0.2
 routepolicy@1.0.4
-sanjo:jasmine@0.12.0
-sanjo:karma@1.4.0
+sanjo:jasmine@0.12.4
+sanjo:karma@1.4.1
 session@1.0.5
 spacebars@1.0.5
 spacebars-compiler@1.0.4
@@ -57,10 +55,10 @@ url@1.0.3
 velocity:core@0.4.5
 velocity:html-reporter@0.4.1
 velocity:meteor-stubs@1.0.0_2
-velocity:node-soft-mirror@0.2.8
+velocity:node-soft-mirror@0.3.1
 velocity:shim@0.1.0
 velocity:test-proxy@0.0.4
 webapp@1.1.6
 webapp-hashing@1.0.2
-xolvio:cucumber@0.3.8
-xolvio:webdriver@0.1.8
+xolvio:cucumber@0.5.1
+xolvio:webdriver@0.3.1
