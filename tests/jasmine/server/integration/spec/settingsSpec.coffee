@@ -1,8 +1,8 @@
 Jasmine.onTest ->
     describe 'The settings checker', ->
 
-        _actualCode
-        _processExit
+        _actualCode = null
+        _processExit = null
 
         beforeEach ->
             _actualCode = null
@@ -34,4 +34,4 @@ Jasmine.onTest ->
             App.checkSettings()
 
             # VERIFY
-            expect(actualExitCode).toBe(null)
+            expect(_actualCode).toBe(null)

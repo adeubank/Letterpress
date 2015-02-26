@@ -6,6 +6,6 @@
 
 meteor-platform
 velocity:html-reporter
-xolvio:cucumber
 sanjo:jasmine
+xolvio:cucumber
 coffeescript
