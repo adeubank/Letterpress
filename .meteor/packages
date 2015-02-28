@@ -6,7 +6,7 @@
 
 meteor-platform
 velocity:html-reporter
+coffeescript
 sanjo:jasmine
 xolvio:cucumber
-coffeescript
 velocity:console-reporter

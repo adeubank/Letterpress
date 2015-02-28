@@ -6,7 +6,7 @@
                     book: Match.ObjectIncluding
                         title: String
         catch e
-            console.error(e.message)
+            console.error e.message
             console.error(
                 """
                 Please start meteor with --settings and include all the required fields.
