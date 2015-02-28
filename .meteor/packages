@@ -9,3 +9,4 @@ velocity:html-reporter
 sanjo:jasmine
 xolvio:cucumber
 coffeescript
+velocity:console-reporter

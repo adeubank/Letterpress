@@ -1,4 +1,4 @@
-App = {
+@App =
     checkSettings: ->
         try
             check Meteor.settings, Match.ObjectIncluding
@@ -7,4 +7,3 @@ App = {
                         title: String
         catch e
             process.exit(1)
-}
