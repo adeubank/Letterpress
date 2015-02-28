@@ -1,4 +1,4 @@
-Jasmine.onTest ->
+describe 'The settings checker', ->
 
     # hold on to the methods overridden here
     _check = null
@@ -34,14 +34,14 @@ Jasmine.onTest ->
 
         expectedErrorMsg = '* * * An error message * * *'
 
-        # setup
+        # SETUP
         check = ->
             throw new Error(expectedErrorMsg)
 
-        # execute
-        App.checkSettings()
+        # EXECUTE
+        @App.checkSettings()
 
-        # verify
+        # VERIFY
         expect(_msgs[0]).toBe(expectedErrorMsg)
 
     it 'does not display an error to the user if the check passes', ->
@@ -50,7 +50,7 @@ Jasmine.onTest ->
         check = ->
 
         # EXECUTE
-        App.checkSettings()
+        @App.checkSettings()
 
         # VERIFY
         expect(_msgs.length).toBe(0)

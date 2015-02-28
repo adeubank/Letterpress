@@ -19,10 +19,9 @@ Jasmine.onTest ->
             Meteor.settings = {}
 
             # EXECUTE
-            App.checkSettings()
+            @App.checkSettings()
 
             # VERIFY
-
             expect(_actualCode).toBe(1)
 
         it 'does not exit the system if the book title is set', ->
@@ -31,7 +30,7 @@ Jasmine.onTest ->
             Meteor.settings = { public: { book: { title: 'Is Set' } } }
 
             # EXECUTE
-            App.checkSettings()
+            @App.checkSettings()
 
             # VERIFY
             expect(_actualCode).toBe(null)
