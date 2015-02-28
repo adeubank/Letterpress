@@ -5,6 +5,7 @@
                 public: Match.ObjectIncluding
                     book: Match.ObjectIncluding
                         title: String
+            return
         catch e
             console.error e.message
             console.error(
@@ -15,5 +16,8 @@
                 """
             )
             process.exit(1)
+            return
+
+        return
 
 @App.checkSettings()

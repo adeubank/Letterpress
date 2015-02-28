@@ -19,7 +19,7 @@ Jasmine.onTest ->
             Meteor.settings = {}
 
             # EXECUTE
-            @App.checkSettings()
+            App.checkSettings()
 
             # VERIFY
             expect(_actualCode).toBe(1)
@@ -30,7 +30,7 @@ Jasmine.onTest ->
             Meteor.settings = { public: { book: { title: 'Is Set' } } }
 
             # EXECUTE
-            @App.checkSettings()
+            App.checkSettings()
 
             # VERIFY
             expect(_actualCode).toBe(null)
