@@ -5,5 +5,6 @@
                 public: Match.ObjectIncluding
                     book: Match.ObjectIncluding
                         title: String
-        catch e
+        catch (e) ->
+            console.error()
             process.exit(1)
