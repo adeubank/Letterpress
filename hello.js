@@ -20,7 +20,9 @@ if (Meteor.isClient) {
   });
 
   Template.header.helpers({
-    imageSrc: Meteor.settings.public.book.header.imageSrc,
+    imageSrc: function () {
+      return Meteor.settings.public.book.header.imageSrc;
+    },
     imageCaption: function () {
       return Meteor.settings.public.book.header.imageCaption;
     }

@@ -43,8 +43,8 @@ module.exports = function () {
 
   this.Then(/^I see the image from "([^"]*)"/, function (expectedImageSource, callback) {
     helper.world.browser.
-      getAttribute('header figure img', function (err, actualImageSource) {
-        assert.equal(actualImageSource, expectedImageSource);
+      getAttribute('header figure img', 'src', function (err, actualImageSource) {
+        assert.ok(actualImageSource.match(expectedImageSource));
         callback();
       });
   });
