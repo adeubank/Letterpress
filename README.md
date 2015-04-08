@@ -1,0 +1,1 @@
+[ ![Codeship Status for adeubank/Letterpress](https://codeship.com/projects/9599ca20-bfd1-0132-7e59-3a4372b16de9/status?branch=master)](https://codeship.com/projects/73056)
